@@ -10,6 +10,7 @@ def oxford_comma(array)
     array.each_with_index do |el,idx|
       if idx < array.length-2
         el+=','
+        puts "added"
       end
     end
     str = array.join(" ")
