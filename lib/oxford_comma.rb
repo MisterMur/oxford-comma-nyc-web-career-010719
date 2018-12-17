@@ -9,7 +9,7 @@ def oxford_comma(array)
     array.insert(-2,"and")
     array.each_with_index do |el,idx|
       if idx < array.length-2
-        el+=','
+        array[idx]=el+','
         puts "added"
       end
     end
