@@ -7,7 +7,14 @@ def oxford_comma(array)
     return array.join(' ')
   elsif array.length >=3
     array.insert(-2,"and")
-    str = array.join(", ")
+    array.each_with_index do |el,idx|
+      if idx < array.length-2
+        el+=','
+        
+        
+      
+    end
+    str = array.join(" ")
     str.delete(str.index("and")+1)
     return str
   end
