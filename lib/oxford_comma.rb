@@ -10,12 +10,10 @@ def oxford_comma(array)
     array.each_with_index do |el,idx|
       if idx < array.length-2
         el+=','
-        
-        
-      
+      end
     end
     str = array.join(" ")
-    str.delete(str.index("and")+1)
+    # str.delete(str.index("and")+1)
     return str
   end
 end
